@@ -115,7 +115,7 @@ def tornado(
     pos_dataops_mod = {}, seriesopt_mod = {},
 ):
     """
-    Tornado chart
+    Plot a Tornado chart
     - options_mod: level 1 echarts options
     https://echarts.apache.org/en/option.html
 
@@ -173,7 +173,7 @@ def gen_rand_df(product_names, neg=False):
 
     return pd.DataFrame({
         'value': values,
-        'name': rng.choice(product_names, size=df_size),
+        'name': product_names,
     })
 
 if __name__ == "__main__":
